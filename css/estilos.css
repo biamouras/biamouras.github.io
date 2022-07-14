@@ -1,12 +1,11 @@
 body {
-  background-image: url(https://images.unsplash.com/photo-1657229610230-9a6b1b4e79ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1896&q=80);
-  background-size: auto 100vh;
+  color:#ffebcd;
   font-family: Arial;
   height: 100vh;
 }
 
 .menu {
-  background-color: white;
+  background-color: #ffd89d;
 }
 
 .menu li {
@@ -29,7 +28,7 @@ a:hover{
 
 .site-title, 
 .site-subtitle{
-  color: whitesmoke;
+  color: #2a1900;
   text-align: center;
 }
 
