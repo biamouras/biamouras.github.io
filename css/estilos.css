@@ -7,7 +7,7 @@
 
 /* main config */
 body {
-  font-family: Helvetica;
+  font-family: 'Barlow', sans-serif;
   height: 100vh;
   font-size: 14px;
   color: rgb(0, 83, 83);
@@ -21,6 +21,11 @@ a {
 
 a:hover{
   text-decoration: underline;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 /* if the vw is bigger than 800px, consider these setings*/
@@ -51,7 +56,8 @@ header {
 .menu a {
   padding: 20px 40px;
   display: block;
-  font-weight: bolder;
+  font-weight: 900;
+  font-size: 1em;
 }
 
 .menu li {
@@ -63,34 +69,61 @@ header {
   justify-content: flex-end;
 }
 
-.site-title, 
-.site-subtitle{
+.name {
   color: whitesmoke;
   text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(50vh - 3em);
 }
 
 .site-title {
   font-size: 4em;
+  font-family: 'Indie Flower', cursive;
+  line-height: 1em;
 }
 
 .site-subtitle {
-  font-style: italic;
   font-size: 2em;
+  font-weight: 200;
 }
 
 .seta {
-  width: 100px;
+  width: 8em;
   position: absolute;
-  top: 90vh;
+  top: calc(90vh - 1em);
+  left: calc(50vw - 4em);
 }
-
 
 /* portfolio items */
 .portfolio {
-  height: 100vh;
-  display: flex;
+  height: calc(100vh - 40px - 1em);
+  padding: 2em;
+}
+
+.portfolio h2 {
+  margin-bottom: 1.334em;
+  text-align: center;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 1em;
+  height: calc(100vh - 8.5em - 40px);
   justify-content: space-around;
-  align-items: center;
+  align-content: center;
+}
+
+@media (min-width: 450px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(2,180px);
+  }
+}
+
+@media (min-width: 600px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3,180px);
+  }
 }
 
 .img-portfolio {
